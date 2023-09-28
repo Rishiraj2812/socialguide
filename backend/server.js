@@ -45,7 +45,7 @@ app.get("*",(req,res) => {
 //cors
 app.use(cors(
     {
-         origin: [""],
+         origin: ["https://socialguide-frontend-puwhaoy12-rishirajsinh-rathods-projects.vercel.app"],
          method: ["POST","GET"],
          credentials: true
     }
