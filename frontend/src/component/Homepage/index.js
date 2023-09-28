@@ -11,7 +11,7 @@ function Index() {
 
   useEffect(() => {
     async function getQuestions() {
-      await axios.get("/api/question").then((res) => {
+      await axios.get("https://socialguide-backend.vercel.app/api/question").then((res) => {
         setQuestions(res.data.reverse());
         console.log(res.data)
       }).catch((err) => {
