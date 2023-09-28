@@ -43,7 +43,14 @@ app.get("*",(req,res) => {
 })
 
 //cors
-app.use(cors())
+app.use(cors(
+    {
+         origin: [""],
+         method: ["POST","GET"],
+         credentials: true
+    }
+    
+));
 
 
 //server listen
