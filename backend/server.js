@@ -48,9 +48,10 @@ app.get("*",(req,res) => {
 //cors
 app.use(cors(
     {
-         origin: ["https://socialguide-frontend.vercel.app"],
+         origin: '*',
          method: ["POST","GET"],
-         credentials: true
+         credentials: true,
+        
     }
     
 ));
