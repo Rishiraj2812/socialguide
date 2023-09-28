@@ -2,7 +2,7 @@
   "name": "socialguide",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://127.0.0.1:80",
+  "proxy": "https://socialguide-backend.vercel.app/",
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@emotion/react": "^11.11.1",
