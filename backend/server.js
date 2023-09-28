@@ -32,6 +32,9 @@ app.use("/api" , router)
 app.use("/upload",express.static(path.join(__dirname,"/../uploads")))
 app.use(express.static(path.join(__dirname,"/../frontend/build")))
 
+app.get("/",(req,res) => {
+    res.json("hello");
+}
 app.get("*",(req,res) => {
 
     try{
@@ -45,7 +48,7 @@ app.get("*",(req,res) => {
 //cors
 app.use(cors(
     {
-         origin: ["https://socialguide-frontend.vercel.app/"],
+         origin: ["https://socialguide-frontend.vercel.app"],
          method: ["POST","GET"],
          credentials: true
     }
