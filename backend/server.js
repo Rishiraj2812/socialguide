@@ -34,7 +34,7 @@ app.use(express.static(path.join(__dirname,"/../frontend/build")))
 
 app.get("/",(req,res) => {
     res.json("hello");
-}
+})
 app.get("*",(req,res) => {
 
     try{
@@ -48,12 +48,10 @@ app.get("*",(req,res) => {
 //cors
 app.use(cors(
     {
-         origin: '*',
-         method: ["POST","GET"],
-         credentials: true
-        
+        origin: ["https://socialguide-frontend.vercel.app"],
+        methods: ["POST", "GET"],
+        credentials: true
     }
-    
 ));
 
 
